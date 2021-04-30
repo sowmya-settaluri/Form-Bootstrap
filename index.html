@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+        body {
+            background-color: rgb(126, 220, 226);
+    background-image: linear-gradient(to bottom right,rgb(105, 212, 219), rgb(90, 204, 194) );
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: small;
+        }
+            #tab{
+    padding: 1%;
+    width: 100%;
+    border-spacing:10px;
+    margin: 2%; }
+    
+      
+
+        
+    </style>
+    
+    <title>Registration Form</title>
+  </head>
+  <body>
+    
+        
+    <div class="container mt-5 mb-5 ">
+        <h1  style="text-align: center;"><u>Registration Form:<u></h1>
+        <form action="success.html" class="form-responsive"> 
+           
+      <section class="d-flex justify-content-center align-content-center">
+        
+        <table class="table table-bordered table-striped p-5 m-5" style="width: 60%;">
+          <tr class="table-primary ">
+            <th>Name:</th>
+            <td>
+                <input type="text" placeholder="First Name" id="name" required>
+                <input type="text" placeholder="Last Name" id="name" required>
+            </td>
+          </tr>
+          <tr class="table-info ">
+            <th>Gender:</th>
+            <td><label for="male"></label>
+                <input type="radio" name="Gender" id="male" value="male" required>Male
+                <label for="female"></label>
+                <input type="radio"  name="Gender" id="female" value="female" required>Female</td>
+          </tr>
+          <tr class="table-primary ">
+            <th>Email:</th>
+            <td><input type="email" placeholder="eg: name@gmail.com" id="email" required></td>
+          </tr>
+          <tr class="table-info ">
+            <th>DOB:</th>
+            <td><input type="date" id="date"></td>
+          </tr>
+          <tr class="table-primary ">
+            <th>Image:</th>
+            <td><input type="file" id="img"></td>
+          </tr>
+          <tr class="table-info ">
+            <th>College</th>
+            <td><select id="colleges" name="college" required>
+                <option value="Andhra University">Andhra University</option>
+                <option value="Githam">Githam</option>
+                <option value="Gayatri">Gayatri</option>
+                <option value="Other">Other</option>
+              </select></td>
+          </tr>
+        </table>
+        
+    </section> 
+
+   
+    <table id="tab" >
+      <tr>
+          <td colspan="2" align="center" >
+           <input type="submit" class=" text-center btn btn-primary" value="Submit" id="submit">
+
+           <input type="reset" class=" text-center btn btn-success" value="Reset" id="reset">     
+          </td>
+      </tr>
+  </table>
+    
+</form> 
+    
+    </div>
+
+    
+  </body>
+</html>
